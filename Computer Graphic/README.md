@@ -1,6 +1,6 @@
 REQUIRES FREEGLUT AND GLEW
 
-Videos included
+Videos included in each folder
 
 two renderer versions:
 
