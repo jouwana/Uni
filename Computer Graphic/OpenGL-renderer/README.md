@@ -19,7 +19,9 @@ includes:
       
   * Noise Texture -> marble effect
   
-  * Two color animations
+  * Two color animations:
+      * Hue based
+      * light shine 
   
   * vertex animation
   
