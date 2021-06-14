@@ -1,5 +1,7 @@
 different algorithms to solve 2048 games
 
+algorithms written in submission.py file
+
 * basic Greedy
 
 * Improved Greedy
