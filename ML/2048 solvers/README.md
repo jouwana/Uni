@@ -23,6 +23,6 @@ included is an image of two graphs to showcase differences between minimax and a
     * average score per thinking time 
     * average depth per thinking time
 
-the hueristics (and subsequently the scores) could be imptoved by adding in:
+the hueristics (and subsequently the scores) could be improved by adding in:
       * monoticity checks
       * smoothness checks
