@@ -26,3 +26,4 @@ includes:
   * vertex animation
   
   
+  * supersamplimg, blurring, fog and normal mapping functionalities removed
