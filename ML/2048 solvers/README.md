@@ -6,6 +6,8 @@ algorithms written in submission.py file
 
 * Improved Greedy
 
+algorithms with iterative deepining:
+
 * minimax move and index players
 
 * alpha-beta minimax player
