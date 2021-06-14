@@ -22,3 +22,7 @@ expectimax can add tile 2 and 4 to the game, with a probablity of 0.9 ofr 2 and 
 included is an image of two graphs to showcase differences between minimax and alpha-beta: 
     * average score per thinking time 
     * average depth per thinking time
+
+the hueristics (and subsequently the scores) could be imptoved by adding in:
+      * monoticity checks
+      * smoothness checks
