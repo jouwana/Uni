@@ -1,0 +1,345 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+camera_dlg DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,253,156,50,14
+    EDITTEXT        edit_left,153,25,50,14,ES_AUTOHSCROLL
+    EDITTEXT        edit_bottom,153,62,51,14,ES_AUTOHSCROLL
+    EDITTEXT        edit_right,153,44,50,14,ES_AUTOHSCROLL
+    EDITTEXT        edit_top,153,80,51,14,ES_AUTOHSCROLL
+    EDITTEXT        edit_near,154,99,51,14,ES_AUTOHSCROLL
+    LTEXT           "top",IDC_STATIC,127,82,19,8
+    LTEXT           "near",IDC_STATIC,128,100,23,8
+    LTEXT           "bottom",IDC_STATIC,127,66,24,8
+    LTEXT           "left",IDC_STATIC,128,28,22,8
+    LTEXT           "right",IDC_STATIC,127,47,23,8
+    EDITTEXT        edit_far,154,117,51,14,ES_AUTOHSCROLL
+    LTEXT           "far",IDC_STATIC,128,118,20,8
+    CONTROL         "Orthogonal",Orthogo,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,32,52,10
+    CONTROL         "Prespective",Prespective,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,51,53,10
+    EDITTEXT        edit_acpect,239,28,40,14,ES_AUTOHSCROLL
+    EDITTEXT        edit_fovy,238,47,40,14,ES_AUTOHSCROLL
+    LTEXT           "aspect",ID_aspect,214,30,22,8
+    LTEXT           "fovy",IDC_STATIC,215,48,14,8
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 256, 102
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,199,81,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,81,50,14
+    LTEXT           "Enter the step size for translation:",IDC_STATIC,34,28,112,8
+    EDITTEXT        edit_step_size,33,43,40,14,ES_AUTOHSCROLL
+END
+
+Add_Light_source DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,155,50,14
+    EDITTEXT        pos_x,24,66,40,14,ES_AUTOHSCROLL
+    CONTROL         "Point Light Source",pnt_src_chexkbox,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,58,73,10
+    CONTROL         "Parallel Light Source",prl_src_chexkbox,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,72,80,10
+    EDITTEXT        pos_y,24,83,40,14,ES_AUTOHSCROLL
+    EDITTEXT        pos_z,24,100,40,14,ES_AUTOHSCROLL
+    EDITTEXT        dir_x,94,64,40,14,ES_AUTOHSCROLL
+    EDITTEXT        dir_y,94,82,40,14,ES_AUTOHSCROLL
+    EDITTEXT        dir_z,94,100,40,14,ES_AUTOHSCROLL
+    LTEXT           "position (x,y,z)",IDC_EDIT7,24,54,50,8
+    LTEXT           "direction (x,y,z)",IDC_STATIC,94,54,52,8
+    LTEXT           "Fill Light Details:",IDC_STATIC,23,14,52,8
+    CONTROL         "Use default values",default_chek,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,149,75,10
+    CONTROL         "",my_color_picker,"MfcColorButton",NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,185,107,50,14
+END
+
+set_material_dlg DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,155,50,14
+    EDITTEXT        emmisive_edittext,231,30,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    EDITTEXT        diffuse_edittext,77,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        specular_edittext,76,79,40,14,ES_AUTOHSCROLL
+    LTEXT           "Set Colors for Model (uniform):",IDC_STATIC,40,15,100,8
+    LTEXT           "Emmisive",IDC_STATIC,41,40,30,8
+    LTEXT           "Diffuse",IDC_STATIC,41,59,24,8
+    LTEXT           "Specular",IDC_STATIC,42,79,28,8
+    CONTROL         "Use Default Values",default_checkbox,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,40,143,76,10
+    LTEXT           "will be choosen only in self lighting mode",IDC_STATIC,81,39,129,8
+    CONTROL         "Self Lighting Material",use_self_light_checkBox,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,40,126,82,10
+    CONTROL         "Non-Uniform Material",nonUnif_Check,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,40,108,83,10
+END
+
+SetAmbient_color DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,198,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,155,50,14
+    CONTROL         "",IDC_MFCCOLORBUTTON1,"MfcColorButton",WS_TABSTOP,44,41,50,14
+    LTEXT           "Set an ambient color:",IDC_STATIC,43,24,69,8
+END
+
+Change_Light_details DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Next",IDOK,198,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,252,155,50,14
+    EDITTEXT        pos_x_c,24,66,40,14,ES_AUTOHSCROLL
+    CONTROL         "Point Light Source",pnt_src_chexkbox_c,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,58,73,10
+    CONTROL         "Parallel Light Source",prl_src_chexkbox_c,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,72,80,10
+    EDITTEXT        pos_y_c,24,83,40,14,ES_AUTOHSCROLL
+    EDITTEXT        pos_z_c,24,100,40,14,ES_AUTOHSCROLL
+    EDITTEXT        dir_x_c,94,64,40,14,ES_AUTOHSCROLL
+    EDITTEXT        dir_y_c,94,82,40,14,ES_AUTOHSCROLL
+    EDITTEXT        dir_z_C,94,100,40,14,ES_AUTOHSCROLL
+    LTEXT           "position (x,y,z)",IDC_EDIT7,24,54,50,8
+    LTEXT           "direction (x,y,z)",IDC_STATIC,94,54,52,8
+    LTEXT           "Fill Light Details:",IDC_STATIC,23,14,52,8
+    CONTROL         "Use old values",default_chek_c,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,149,63,10
+    EDITTEXT        light_number_edittext_c,243,15,40,14,ES_AUTOHSCROLL
+    LTEXT           "choose #light",choose_light_static,191,17,44,8
+    CONTROL         "Light is On",on_edit_text_c,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,131,49,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    camera_dlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 24
+        VERTGUIDE, 76
+        VERTGUIDE, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 42
+        HORZGUIDE, 61
+        HORZGUIDE, 79
+        HORZGUIDE, 96
+        HORZGUIDE, 114
+        HORZGUIDE, 134
+        HORZGUIDE, 150
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    Add_Light_source, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+        HORZGUIDE, 58
+        HORZGUIDE, 107
+    END
+
+    set_material_dlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        VERTGUIDE, 40
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    SetAmbient_color, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    Change_Light_details, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+        HORZGUIDE, 58
+        HORZGUIDE, 107
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+camera_dlg AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+Add_Light_source AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+set_material_dlg AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+SetAmbient_color AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+Change_Light_details AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+Add_Light_source DLGINIT
+BEGIN
+    my_color_picker, 0x37c, 215, 0
+0x4d3c, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 0x6f74, 0x5f6e, 0x6e45, 
+0x6261, 0x656c, 0x744f, 0x6568, 0x4272, 0x7475, 0x6f74, 0x3e6e, 0x5254, 
+0x4555, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 
+0x455f, 0x616e, 0x6c62, 0x4f65, 0x6874, 0x7265, 0x7542, 0x7474, 0x6e6f, 
+0x3c3e, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 0x455f, 
+0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 0x7461, 0x6369, 0x7542, 0x7474, 
+0x6e6f, 0x463e, 0x4c41, 0x4553, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 
+0x7542, 0x7474, 0x6e6f, 0x455f, 0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 
+0x7461, 0x6369, 0x7542, 0x7474, 0x6e6f, 0x3c3e, 0x464d, 0x4343, 0x6c6f, 
+0x726f, 0x7542, 0x7474, 0x6e6f, 0x435f, 0x6c6f, 0x6d75, 0x736e, 0x6f43, 
+0x6e75, 0x3e74, 0x3c35, 0x4d2f, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 
+0x6f74, 0x5f6e, 0x6f43, 0x756c, 0x6e6d, 0x4373, 0x756f, 0x746e, "\076" 
+    0
+END
+
+SetAmbient_color DLGINIT
+BEGIN
+    IDC_MFCCOLORBUTTON1, 0x37c, 215, 0
+0x4d3c, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 0x6f74, 0x5f6e, 0x6e45, 
+0x6261, 0x656c, 0x744f, 0x6568, 0x4272, 0x7475, 0x6f74, 0x3e6e, 0x5254, 
+0x4555, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 
+0x455f, 0x616e, 0x6c62, 0x4f65, 0x6874, 0x7265, 0x7542, 0x7474, 0x6e6f, 
+0x3c3e, 0x464d, 0x4343, 0x6c6f, 0x726f, 0x7542, 0x7474, 0x6e6f, 0x455f, 
+0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 0x7461, 0x6369, 0x7542, 0x7474, 
+0x6e6f, 0x463e, 0x4c41, 0x4553, 0x2f3c, 0x464d, 0x4343, 0x6c6f, 0x726f, 
+0x7542, 0x7474, 0x6e6f, 0x455f, 0x616e, 0x6c62, 0x4165, 0x7475, 0x6d6f, 
+0x7461, 0x6369, 0x7542, 0x7474, 0x6e6f, 0x3c3e, 0x464d, 0x4343, 0x6c6f, 
+0x726f, 0x7542, 0x7474, 0x6e6f, 0x435f, 0x6c6f, 0x6d75, 0x736e, 0x6f43, 
+0x6e75, 0x3e74, 0x3c35, 0x4d2f, 0x4346, 0x6f43, 0x6f6c, 0x4272, 0x7475, 
+0x6f74, 0x5f6e, 0x6f43, 0x756c, 0x6e6d, 0x4373, 0x756f, 0x746e, "\076" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "CG_skel_w_MFC"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
